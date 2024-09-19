@@ -1,0 +1,40 @@
+<div *ngIf="debateWithReplies" class="container my-4">
+  <div class="card">
+    <div class="card-body">
+      <!-- Debate Title -->
+      <h2 class="card-title">{{ debateWithReplies.debate.title }}</h2>
+      <!-- Debate Topic -->
+      <h5 class="card-subtitle mb-2 text-muted">{{ debateWithReplies.debate.topic }}</h5>
+      <!-- Debate Description -->
+      <p class="card-text">{{ debateWithReplies.debate.descriptionHashIpfs }}</p>
+    </div>
+  </div>
+
+  <!-- Replies Section -->
+  <div class="mt-4">
+    <h3>Replies:</h3>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let reply of debateWithReplies.replies" class="list-group-item">
+        <!-- Reply Content -->
+        <p>{{ reply.contentHashIpfs }}</p>
+        <!-- Reply Meta Information -->
+        <div class="text-secondary">
+          <small>Written by: <strong>{{ usernames[reply.creator] || reply.creator }}</strong> ({{ reply.creator }})</small>
+          <br>
+          <small>Date: {{ reply.timeOfCreation | date:'medium' }}</small>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- New Reply Form -->
+  <div class="mt-4">
+    <form (submit)="submitReply()" class="mb-3">
+      <div class="mb-3">
+        <label for="replyContent" class="form-label">Your Reply:</label>
+        <textarea id="replyContent" class="form-control" [(ngModel)]="newReplyContent" name="replyContent" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Post Reply</button>
+    </form>
+  </div>
+</div>

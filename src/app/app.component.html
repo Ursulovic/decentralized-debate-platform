@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular App with Bootstrap</title>
+</head>
+<body>
+
+<!-- Navbar using Angular Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MyApp</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/profile" routerLinkActive="active">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/allDebates" routerLinkActive="active">Debate List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/newDebate" routerLinkActive="active">New Debate</a>
+      </li>
+      <!-- Add more nav items as needed -->
+    </ul>
+  </div>
+</nav>
+
+<!-- Router Outlet -->
+<div class="container mt-3">
+  <router-outlet></router-outlet>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="container api-key-container mt-4">
+  <div class="mb-3">
+    <label for="apiKeyInput" class="form-label">API Key:</label>
+    <input type="text" class="form-control" id="apiKeyInput" [(ngModel)]="key" placeholder="Enter your Etherscan API key">
+  </div>
+  <button class="btn btn-primary mb-3" (click)="setKey()">Set API Key</button>
+
+  <div class="mb-3">
+    <label for="usernameInput" class="form-label">Username:</label>
+    <input type="text" class="form-control" id="usernameInput" [(ngModel)]="username" placeholder="Enter your username">
+  </div>
+
+  <div class="mb-3">
+    <label for="bioInput" class="form-label">Biography IPFS Hash:</label>
+    <input type="text" class="form-control" id="bioInput" [(ngModel)]="bio" placeholder="Enter your biography ipfs hash">
+  </div>
+
+  <div class="mb-3">
+    <label for="pictureInput" class="form-label">Profile Picture Hash:</label>
+    <input type="text" class="form-control" id="pictureInput" [(ngModel)]="picture" placeholder="Enter your profile picture hash">
+  </div>
+
+  <button class="btn btn-success" (click)="setProfileData()">Set Profile Data</button>
+</div>

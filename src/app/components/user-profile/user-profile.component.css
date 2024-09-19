@@ -1,0 +1,24 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 20px;
+}
+
+.api-key-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#usernameInput {
+  width: 400px;
+}
+#bioInput {
+  width: 400px;
+}
+#pictureInput {
+  width: 400px;
+}
+#apiKeyInput {
+  width: 400px;
+}

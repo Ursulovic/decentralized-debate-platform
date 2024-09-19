@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div *ngFor="let debate of debates; let i = index" class="card mb-3">
+    <div class="card-body">
+      <a [routerLink]="['/debate', debate.debateId]" class="text-decoration-none">
+        <h3 class="card-title">{{ debate.title }}</h3>
+      </a>
+      <p class="card-text">{{ debate.topic }}</p>
+    </div>
+  </div>
+
+  <ng-template #noDebates>
+    <div class="alert alert-info" role="alert">
+      No debates available.
+    </div>
+  </ng-template>
+</div>

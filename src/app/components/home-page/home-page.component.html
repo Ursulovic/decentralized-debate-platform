@@ -1,0 +1,31 @@
+<div class="container mt-5">
+
+  <!-- About Section -->
+  <section class="card mb-5">
+    <div class="card-body">
+      <h2 class="card-title">Decentralized Debate Platform for Everyone</h2>
+      <p class="card-text">{{ websiteInfo.about }}</p>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="card mb-5">
+    <div class="card-body">
+      <h2 class="card-title">Technologies Used</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let tech of websiteInfo.technologies">{{ tech }}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="card mb-5">
+    <div class="card-body">
+      <h2 class="card-title">Contact Information</h2>
+      <p class="card-text"><strong>Name:</strong> {{ websiteInfo.contact.name }}</p>
+      <p class="card-text"><strong>Email:</strong> <a href="mailto:{{ websiteInfo.contact.email }}" class="card-link">{{ websiteInfo.contact.email }}</a></p>
+      <p class="card-text"><strong>Phone:</strong> {{ websiteInfo.contact.phone }}</p>
+    </div>
+  </section>
+
+</div>
