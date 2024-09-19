@@ -1,13 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> First commit
+=======
+>>>>>>> 363b9651e4eb8691b952d5cd43356a9b56727d34
 # decentralized-debate-platform
 
 How to run
 
 1.Run command npm i
 2.Run command ng serve 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -40,3 +44,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 >>>>>>> First commit
 >>>>>>> First commit
+=======
+>>>>>>> 363b9651e4eb8691b952d5cd43356a9b56727d34
